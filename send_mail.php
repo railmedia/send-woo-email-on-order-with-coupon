@@ -7,7 +7,7 @@ function my_website_on_order_placed( $orderid ) {
     $coupons = $order->get_coupon_codes();
     if( $coupons ) {
         foreach( $coupons as $coupon ) {
-            if( $coupon = 'test123' ) { // replace with your coupon name
+            if( $coupon == 'test123' ) { // replace with your coupon name
 
                 $headers = 'MIME-Version: 1.0' . "\r\n";
                 $headers .= 'Content-Type: text/html; charset=iso-8859-1' . "\r\n";
