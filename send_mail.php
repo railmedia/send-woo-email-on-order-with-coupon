@@ -36,4 +36,6 @@ function my_website_on_order_placed( $orderid ) {
         }
     }
 }
+
+add_action( 'woocommerce_thankyou', 'my_website_on_order_placed' );
 ?>
